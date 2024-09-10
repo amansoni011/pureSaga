@@ -1,0 +1,291 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Light.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Gilroy;
+}
+
+:root {
+    --b1: #72BF44;
+    --b2: #F9F9F9;
+}
+
+body {
+    background-image: url(bg-light.png);
+    background-size: cover;
+    background-attachment: fixed;
+    /* width: 100%; */
+    padding: 10px;
+}
+
+section {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    width: 100px;
+
+}
+
+.navbar div {
+    display: flex;
+    gap: 50px;
+}
+
+.content {
+    /* background-color: #fff; */
+    /* margin: 30px 100px 10px 100px; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding: 40px 0; */
+}
+
+.text {
+    width: 600px;
+}
+
+h1 {
+    font-size: 50px;
+}
+.content-img{
+    width:50%;
+}
+
+.content-img img{
+    width:100%;
+    /* background-color: #fff; */
+}
+
+/* button */
+.buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.b1 {
+    padding: 10px 25px;
+    background-color: var(--b1);
+    position: relative;
+    border: 2px solid var(--b1);
+}
+
+.b1::after {
+    width: 97%;
+    height: 95%;
+    content: '';
+    position: absolute;
+    border: 2px solid var(--b1);
+    top: -5px;
+    left: 5px;
+    transition: all .3s;
+}
+
+.b1:hover::after {
+    top: 0;
+    left: 0;
+}
+
+.b2 {
+    padding: 10px 25px;
+    background-color: var(--b2);
+    position: relative;
+    border: 2px solid var(--b1);
+}
+
+.b2::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    border: 2px solid black;
+    top: -5px;
+    left: 5px;
+    transition: all .3s;
+}
+
+.b2:hover::after {
+    top: -1px;
+    left: -1px;
+}
+
+.design {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin:auto;
+}
+
+.design img {
+    width: 100px;
+    height: 100px;
+}
+
+.product {
+    /* padding: 10px 100px; */
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.product img {
+    width: 300px;
+    height: 400px;
+}
+/* .ab{
+    max-width: 100%;
+} */
+.ab h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.ph1{
+    text-align: center;
+}
+.cards{
+    margin-top: 20px;
+    padding: 30px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--b1);
+    color:var(--b2);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 1px solid var(--b2);
+}
+.dot{
+    height:50px;
+    width:2px;
+    background-color:#72BF44;
+    overflow: hidden;
+}
+
+.question{
+   padding: 10px;
+    border-radius:5px 5px 0 0;
+    background-color:var(--b1);
+}
+.answer{
+    padding: 10px;
+    background-color:var(--b2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-button{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+ .contact{
+    margin: 30px 0; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  form{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  form input, form textarea{
+    /* width:100%; */
+    padding: 20px 10px;
+  }
+  form button{
+    width: 100% !important;
+  }
+  footer{
+    /* background-color: #fff; */
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fimg{
+    width: 200px;
+    padding: 20px;
+  }
+  footer img{
+    width:80%;
+    
+  }
+.useful{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:10px;
+  }
+  .contact-us{
+    line-height: 25px;
+    width: 200px;
+    padding: 20px;
+  }
+  .contact-us h2{
+    margin-bottom: 10px;
+  }
+  
+@media screen and (max-width: 848px) {
+
+    section {
+     max-width:400px;
+     margin: auto;
+    } 
+    .link{
+    display: none !important;
+    }
+    form{
+        width:100%; 
+      }
+      .mobile-button{
+        display: block;
+      }
+    .mobile-menu{
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }  
+    .show{
+        display: flex;
+    }
+  }
+ 
